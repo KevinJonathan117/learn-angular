@@ -18,4 +18,8 @@
   {{i+1}}. {{ buah.nama }} - {{ buah.harga | currency : 'Rp.'}}
 </div>
 
+<div *ngFor="let data of itemArr; let i = index">
+  {{data}}
+</div>
+
 <!--angular.io/guide/pipes-->

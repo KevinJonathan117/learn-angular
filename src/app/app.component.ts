@@ -14,4 +14,5 @@ export class AppComponent  {
     nama : 'Jeruk',
     harga : 5000
   }];
+  itemArr = ['aa', 'bb', 'cc', 'dd']; 
 }
