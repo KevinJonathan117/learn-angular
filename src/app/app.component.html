@@ -36,5 +36,13 @@
   <p>Show when show not true</p>
 </ng-template>
 
+<input [(ngModel)] =user type="text">
+<p *ngIf="User"> Halo {{user.name}} </p>
+
+<p>
+<button (click) = "klikButton()">Coba ditekan</button>
+{{pesan}}
+</p>
+
 
 <!--angular.io/guide/pipes-->

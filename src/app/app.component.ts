@@ -17,4 +17,10 @@ export class AppComponent  {
   itemArr = ['aa', 'bb', 'cc', 'dd']; 
 
   show: boolean = true;
+  user = "";
+
+  pesan = ''
+  klikButton() {
+    this.pesan = "Tombol ditekan";
+  }
 }
