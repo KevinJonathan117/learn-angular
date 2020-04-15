@@ -24,4 +24,17 @@
 
 <p *ngIf="show">Tampilkan jika nilai show = true</p>
 
+<ng-template
+  *ngIf="show; then showBlock; else notShowBlock">
+</ng-template>
+
+<ng-template #showBlock>
+  <p>Show when show true</p>
+</ng-template>
+
+<ng-template #notShowBlock>
+  <p>Show when show not true</p>
+</ng-template>
+
+
 <!--angular.io/guide/pipes-->
