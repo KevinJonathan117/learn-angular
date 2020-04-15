@@ -1,4 +1,4 @@
-<hello name="{{ name }}"></hello>
+<!--<hello name="{{ name }}"></hello>
 <p>
   Belajar Angular Pertama
 
@@ -24,10 +24,6 @@
 
 <p *ngIf="show">Tampilkan jika nilai show = true</p>
 
-<ng-template
-  *ngIf="show; then showBlock; else notShowBlock">
-</ng-template>
-
 <ng-template #showBlock>
   <p>Show when show true</p>
 </ng-template>
@@ -42,7 +38,16 @@
 <p>
 <button (click) = "klikButton()">Coba ditekan</button>
 {{pesan}}
-</p>
+</p>-->
 
+<input [(ngModel)]=a type="number">
+<input [(ngModel)]=b type="number">
+<br>
+<button (click) = "countInput()">Count</button>
+<button (click) = "clearInput()">Clear</button>
+<p>Total: {{total}}</p>
+<div *ngFor="let data of output;">
+  {{data}}
+</div>
 
 <!--angular.io/guide/pipes-->
